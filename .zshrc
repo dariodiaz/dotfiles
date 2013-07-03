@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -353,13 +353,22 @@ alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgree
 
 # Z script
 . $HOME/z.sh
+
+# Android SDK
 export PATH=$PATH:$HOME/android-sdk-linux/
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-#
-## This loads RVM into a shell session.
+
+## RVM - This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
+# Convertir ovg a avi
 alias ogv2avi="sh $HOME/ogv2avi.sh"
+
+# Laravel
+# Crear un proyecto laravel
+alias laravel="composer create-project laravel/laravel"
+
+# Artisan linea de comandos
+alias artisan="php artisan"
