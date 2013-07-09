@@ -1,0 +1,14 @@
+# Personal laptop
+Host d4r1o-laptop
+Hostname 192.168.1.5
+User d4r1o
+
+# Work laptop
+Host ddiaz-rbm
+Hostname 192.168.1.6
+User ddiaz
+
+# Stella PC -- To check!
+Host stella
+Hostname 192.168.1.10
+User stella
