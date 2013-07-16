@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="jnrowe"
+ZSH_THEME="af-magic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -375,3 +375,9 @@ alias artisan="php artisan"
 
 # PHP server
 alias phps="php -S localhost:8000"
+
+# Para mostrar la version de php en prompt
+PHPBREW_SET_PROMPT=1
+
+# PHP brew para manejar multiples versiones de php - como pyenv
+source ~/.phpbrew/bashrc
