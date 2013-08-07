@@ -381,3 +381,7 @@ PHPBREW_SET_PROMPT=1
 
 # PHP brew para manejar multiples versiones de php - como pyenv
 source ~/.phpbrew/bashrc
+
+# Alias para actualizar todos los repositorios git en un directorio
+REPOS_DIRECTORY="/home/d4r1o/Programacion/Repos/"
+alias update_repos="find . -maxdepth 1 -type d -print -execdir git --git-dir={}/.git --work-tree=$REPOS_DIRECTORY/{} pull origin master \;"
