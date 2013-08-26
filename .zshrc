@@ -388,3 +388,10 @@ alias update_repos="find . -maxdepth 1 -type d -print -execdir git --git-dir={}/
 
 # Whenever you need to fetch your ssh-key, just type sshkey, and it'll be copied to your clipboard
 alias sshkey="cat ~/.ssh/id_rsa.pub | xclip && echo 'Copied to clipboard.'"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Alias to connect via ssh
+alias stella="ssh stella"
+alias ddiaz-rbm="ssh ddiaz-rbm"
+alias d4r1o-laptop="ssh d4r1o-laptop"
