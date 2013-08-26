@@ -387,7 +387,7 @@ REPOS_DIRECTORY="/home/d4r1o/Programacion/Repos/"
 alias update_repos="find . -maxdepth 1 -type d -print -execdir git --git-dir={}/.git --work-tree=$REPOS_DIRECTORY/{} pull origin master \;"
 
 # Whenever you need to fetch your ssh-key, just type sshkey, and it'll be copied to your clipboard
-alias sshkey="cat ~/.ssh/id_rsa.pub | xclip && echo 'Copied to clipboard.'"
+function sshkey() { xclip -sel clip < ~/.ssh/"$@" && echo 'Copied to clipboard.' ;}
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
